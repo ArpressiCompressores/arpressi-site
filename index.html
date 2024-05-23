@@ -12,6 +12,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            background: url('https://upload.wikimedia.org/wikipedia/commons/6/64/Background-image-of-MN.jpg') no-repeat center center/cover;
         }
         header {
             background-color: #b30000; /* Cor vermelha */
@@ -31,9 +32,8 @@
             margin: 0 auto;
             padding: 0 20px;
         }
-        header .logo {
-            font-size: 24px;
-            font-weight: bold;
+        header .logo img {
+            height: 50px;
         }
         header nav {
             display: flex;
@@ -110,6 +110,9 @@
             text-decoration: none;
             font-size: 24px;
         }
+        footer .social-icons a:hover {
+            color: #ff6600;
+        }
         @media (max-width: 768px) {
             header .container, .container {
                 padding: 0 10px;
@@ -123,7 +126,9 @@
 <body>
     <header>
         <div class="container">
-            <div class="logo">Arpressi</div>
+            <div class="logo">
+                <img src="https://resonant-shawl-006.notion.site/image/Arpressi_Logo.png" alt="Arpressi Logo">
+            </div>
             <nav>
                 <a href="#home">Home</a>
                 <a href="#about">Sobre Nós</a>
@@ -174,10 +179,11 @@
         <div class="container">
             <p>&copy; 2024 Arpressi Compressores. Todos os direitos reservados.</p>
             <div class="social-icons">
-                <a href="#" class="fab fa-facebook-f"></a>
-                <a href="#" class="fab fa-twitter"></a>
-                <a href="#" class="fab fa-linkedin-in"></a>
-                <a href="#" class="fab fa-instagram"></a>
+                <a href="https://www.tiktok.com/@arpressicompressores?_t=8jgQTyXMxnS&_r=1" class="fab fa-tiktok"></a>
+                <a href="https://www.instagram.com/arpressi.compressores/" class="fab fa-instagram"></a>
+                <a href="https://www.facebook.com/arpressi.compressores" class="fab fa-facebook-f"></a>
+                <a href="https://br.linkedin.com/company/arpressi-compressores-mc" class="fab fa-linkedin-in"></a>
+                <a href="https://wa.me/5519971455141/?text=%7EMariana%20Arpressi" class="fab fa-whatsapp"></a>
             </div>
         </div>
     </footer>
