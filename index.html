@@ -21,6 +21,7 @@
             top: 0;
             width: 100%;
             z-index: 1000;
+            transition: background-color 0.3s;
         }
         header .container {
             display: flex;
@@ -54,14 +55,27 @@
             align-items: center;
             color: #fff;
             text-align: center;
+            transition: all 0.5s ease-in-out;
         }
         .hero h1 {
             font-size: 48px;
+            animation: fadeInDown 1s;
+        }
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
+            transition: all 0.5s ease-in-out;
         }
         section {
             margin: 50px 0;
@@ -70,6 +84,10 @@
             background-color: #f4f4f4;
             padding: 20px;
             border-radius: 8px;
+            transition: transform 0.5s;
+        }
+        .about:hover, .services:hover, .products:hover, .contact:hover {
+            transform: scale(1.05);
         }
         .about img, .products img {
             width: 100%;
@@ -81,6 +99,7 @@
             color: #fff;
             text-align: center;
             padding: 20px 0;
+            transition: background-color 0.3s;
         }
         footer .social-icons {
             margin: 20px 0;
@@ -119,23 +138,23 @@
     </section>
     <section id="about" class="about container">
         <h2>Sobre Nós</h2>
-        <p>A Arpressi Compressores é líder em soluções de compressão de ar, oferecendo produtos de alta qualidade e serviços especializados para diversas indústrias.</p>
+        <p>A Arpressi Compressores é líder em soluções de compressão de ar, oferecendo produtos de alta qualidade e serviços especializados para diversas indústrias. Fundada em 1998, a empresa tem se destacado pelo compromisso com a inovação e a satisfação do cliente.</p>
         <img src="https://via.placeholder.com/1200x600" alt="Sobre Nós">
     </section>
     <section id="products" class="products container">
         <h2>Produtos</h2>
         <div>
             <img src="https://via.placeholder.com/600x400" alt="Produto 1">
-            <p>Descrição do produto 1.</p>
+            <p>Compressores de Ar de Alta Performance</p>
         </div>
         <div>
             <img src="https://via.placeholder.com/600x400" alt="Produto 2">
-            <p>Descrição do produto 2.</p>
+            <p>Sistemas de Filtragem e Secagem de Ar</p>
         </div>
     </section>
     <section id="services" class="services container">
         <h2>Serviços</h2>
-        <p>Oferecemos uma gama completa de serviços de manutenção e suporte para garantir que seus sistemas de compressão de ar operem de maneira eficiente e confiável.</p>
+        <p>Oferecemos uma gama completa de serviços de manutenção e suporte para garantir que seus sistemas de compressão de ar operem de maneira eficiente e confiável. Nossa equipe de técnicos altamente qualificados está pronta para atender às suas necessidades.</p>
     </section>
     <section id="contact" class="contact container">
         <h2>Contato</h2>
@@ -148,6 +167,8 @@
             <textarea id="message" name="message" required></textarea>
             <button type="submit">Enviar</button>
         </form>
+        <p>Email: contato@arpressi.com.br</p>
+        <p>Telefone: (11) 1234-5678</p>
     </section>
     <footer>
         <div class="container">
